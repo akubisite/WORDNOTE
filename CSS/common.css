@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    padding: 0 45px;
+    align-items: center;
+}
+
+h1 {
+    flex: 1;
+}
+
+h1 img {
+    width: 150px;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+}
+
+.nav_li {
+    transition: .3s ease;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 208px);
+}
+
+.home_ti {
+    font: bold;
+    font-size: 30px;
+}
+
+.nav_li:hover {
+    text-decoration: underline;
+    text-shadow: 4px 4px 4px rgb(121, 105, 105);
+    transform: rotate(-5deg);
+    color:black;
+}
+
+.nav_txt {
+    font-size: 40px;
+    color: white;
+}
+
+.add_txt {
+    display: inline-block;
+    color: black;
+    font-size: 35px;
+    width: 150px;
+}
+
+.add_area {
+    display: block;
+    margin-top: 10px;
+}
+
+.add_description {
+    text-align: center;
+    font-size: 30px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+.add_input {
+    width: 500px;
+    padding: 10px;
+    height: 100px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.add_btn {
+    display: block;
+    margin: 50px auto;
+    padding: 10px 50px;
+    font-size: 45px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+}
+
+.add_btn:hover{
+    color: rgb(141, 141, 141);
+}
+
+.add_btn:active {
+    transform: translateY(4px);
+}
+
+/* .create-area {
+    background: rgb(255, 181, 181);
+    width: 500px;
+    height: 200px;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    overflow-y: scroll;
+} */
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: none;
+    }
+}
