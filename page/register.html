@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/common.css">
+    <title>単語登録画面</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="/WORDNOTE/index.html"><img src="/IMAGE/White_on_Black.png" alt="単語登録"></a></h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav_li"><a class="nav_txt" href="/WORDNOTE/page/register.html">単語登録</a></li>
+                <li class="nav_li"><a class="nav_txt" href="/WORDNOTE/page/edit.html">単語編集</a></li>
+                <li class="nav_li"><a class="nav_txt" href="/WORDNOTE/page/review.html">単語復習</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="app">
+        <div class="add">
+            <h2 class="add_description">単語を入力してください。</h2>
+            <div class="add_area">
+                <label>
+                    <span class="add_txt">単語</span>
+                    <input class="add_input js-word" type="text" V-model="word">
+                </label>
+            </div>
+            <div class="add_area">
+                <label>
+                    <span class="add_txt add_txt2">説明文</span>
+                    <textarea class="add_input js-description" name="" id="" cols="30" rows="10"
+                        v-model="description"></textarea>
+                </label>
+            </div>
+            <button class="add_btn js-add-btn" type="button">登録</button>
+            <div class="create-area">
+                <p>{{word}}</p>
+                <p>{{description}}</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><small>2021 Tezuka-studio &copy; All Rights Reserved.</small></p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script src="https://unpkg.com/vuex"></script>
+<script src="../JS/main.js"></script>
+
+</html>
